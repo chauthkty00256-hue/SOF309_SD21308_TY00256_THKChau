@@ -1,0 +1,1053 @@
+{
+  "roles": [
+    {
+      "roleId": 1,
+      "roleName": "Admin"
+    },
+    {
+      "roleId": 2,
+      "roleName": "Quản lý"
+    },
+    {
+      "roleId": 3,
+      "roleName": "Khách hàng"
+    },
+    {
+      "roleId": 4,
+      "roleName": "Lễ tân"
+    }
+  ],
+  "sports": [
+    {
+      "monTheThaoId": 1,
+      "tenMon": "Bóng đá"
+    },
+    {
+      "monTheThaoId": 2,
+      "tenMon": "Cầu lông"
+    },
+    {
+      "monTheThaoId": 3,
+      "tenMon": "Pickleball"
+    },
+    {
+      "monTheThaoId": 4,
+      "tenMon": "Tennis"
+    },
+    {
+      "monTheThaoId": 5,
+      "tenMon": "Bóng rổ"
+    },
+    {
+      "monTheThaoId": 6,
+      "tenMon": "Bóng chuyền"
+    }
+  ],
+  "facilities": [
+    {
+      "coSoId": 1,
+      "tenCoSo": "V-SPORT Arena Quận 1",
+      "diaChi": "128 Nguyễn Du, Phường Bến Thành, Quận 1, TP.HCM",
+      "soDienThoai": "02838221100",
+      "trangThai": "Đang hoạt động",
+      "gioMoCua": "06:00:00",
+      "gioDongCua": "23:00:00",
+      "hinhAnh": "/assets/images/vsport/courts/court-football.jpg",
+      "moTa": "Tổ hợp sân bóng đá cỏ nhân tạo 5v5, 7v7 và cầu lông chuẩn thi đấu ngay trung tâm Quận 1.",
+      "loaiHinhKinhDoanh": "Bóng đá, Cầu lông",
+      "soLuongSanDuKien": 6,
+      "accountIdQuanLy": 2,
+      "viDo": 10.773412,
+      "kinhDo": 106.696725
+    },
+    {
+      "coSoId": 2,
+      "tenCoSo": "V-SPORT Center Thủ Đức",
+      "diaChi": "45 Võ Văn Ngân, Phường Linh Chiểu, TP. Thủ Đức, TP.HCM",
+      "soDienThoai": "02837223344",
+      "trangThai": "Đang hoạt động",
+      "gioMoCua": "05:30:00",
+      "gioDongCua": "22:30:00",
+      "hinhAnh": "/assets/images/vsport/courts/court-pickleball.jpg",
+      "moTa": "Trung tâm Pickleball và Cầu lông hiện đại với mái che cách nhiệt và hệ thống đèn LED chống chói.",
+      "loaiHinhKinhDoanh": "Pickleball, Cầu lông, Tennis",
+      "soLuongSanDuKien": 8,
+      "accountIdQuanLy": 5,
+      "viDo": 10.850512,
+      "kinhDo": 106.76511
+    },
+    {
+      "coSoId": 3,
+      "tenCoSo": "V-SPORT Club Vũng Tàu",
+      "diaChi": "88 Thùy Vân, Phường Thắng Tam, TP. Vũng Tàu",
+      "soDienThoai": "02543855667",
+      "trangThai": "Đang hoạt động",
+      "gioMoCua": "06:00:00",
+      "gioDongCua": "22:00:00",
+      "hinhAnh": "/assets/images/vsport/courts/court-tennis.jpg",
+      "moTa": "Cụm sân Tennis \u0026 Bóng đá view biển thoáng mát, có khu vực nghỉ ngơi và canteen đầy đủ.",
+      "loaiHinhKinhDoanh": "Tennis, Bóng đá",
+      "soLuongSanDuKien": 4,
+      "accountIdQuanLy": 2,
+      "viDo": 10.33658,
+      "kinhDo": 107.08754
+    }
+  ],
+  "accounts": [
+    {
+      "accountId": 1,
+      "username": "admin",
+      "password": "$2a$10$zRdC3GgVR6F4vzmAboZVEe2/HzbfppRFTQvIV0AYE1fJZG2jbn6MK",
+      "fullName": "Quản trị viên V-SPORT",
+      "phoneNumber": "0901000001",
+      "email": "admin@vsport.vn",
+      "maNganHang": null,
+      "gioiTinh": "Nam",
+      "avatarUrl": "/assets/images/vsport/community/community-01.jpg",
+      "roleId": 1,
+      "coSoId": null,
+      "monTheThaoYeuThichId": 1,
+      "diemUyTin": 100
+    },
+    {
+      "accountId": 2,
+      "username": "manager1",
+      "password": "$2a$10$zRdC3GgVR6F4vzmAboZVEe2/HzbfppRFTQvIV0AYE1fJZG2jbn6MK",
+      "fullName": "Nguyễn Minh Quản",
+      "phoneNumber": "0901000002",
+      "email": "manager1@vsport.vn",
+      "maNganHang": "VCB",
+      "gioiTinh": "Nam",
+      "avatarUrl": "/assets/images/vsport/community/community-02.jpg",
+      "roleId": 2,
+      "coSoId": 1,
+      "monTheThaoYeuThichId": 1,
+      "diemUyTin": 100
+    },
+    {
+      "accountId": 3,
+      "username": "khach1",
+      "password": "$2a$10$zRdC3GgVR6F4vzmAboZVEe2/HzbfppRFTQvIV0AYE1fJZG2jbn6MK",
+      "fullName": "Trần Văn Hùng",
+      "phoneNumber": "0901000003",
+      "email": "khach1@vsport.vn",
+      "maNganHang": null,
+      "gioiTinh": "Nam",
+      "avatarUrl": "/assets/images/vsport/community/community-03.jpg",
+      "roleId": 3,
+      "coSoId": null,
+      "monTheThaoYeuThichId": 1,
+      "diemUyTin": 96
+    },
+    {
+      "accountId": 4,
+      "username": "staff1",
+      "password": "$2a$10$zRdC3GgVR6F4vzmAboZVEe2/HzbfppRFTQvIV0AYE1fJZG2jbn6MK",
+      "fullName": "Lê Thị Lan",
+      "phoneNumber": "0901000004",
+      "email": "staff1@vsport.vn",
+      "maNganHang": null,
+      "gioiTinh": "Nữ",
+      "avatarUrl": "/assets/images/vsport/community/team-01.jpg",
+      "roleId": 4,
+      "coSoId": 1,
+      "monTheThaoYeuThichId": 2,
+      "diemUyTin": 100
+    },
+    {
+      "accountId": 5,
+      "username": "manager2",
+      "password": "$2a$10$zRdC3GgVR6F4vzmAboZVEe2/HzbfppRFTQvIV0AYE1fJZG2jbn6MK",
+      "fullName": "Phạm Hoàng Long",
+      "phoneNumber": "0901000005",
+      "email": "manager2@vsport.vn",
+      "maNganHang": "MB",
+      "gioiTinh": "Nam",
+      "avatarUrl": "/assets/images/vsport/community/community-02.jpg",
+      "roleId": 2,
+      "coSoId": 2,
+      "monTheThaoYeuThichId": 3,
+      "diemUyTin": 100
+    },
+    {
+      "accountId": 6,
+      "username": "khach2",
+      "password": "$2a$10$zRdC3GgVR6F4vzmAboZVEe2/HzbfppRFTQvIV0AYE1fJZG2jbn6MK",
+      "fullName": "Nguyễn Thảo Vy",
+      "phoneNumber": "0901000006",
+      "email": "khach2@vsport.vn",
+      "maNganHang": null,
+      "gioiTinh": "Nữ",
+      "avatarUrl": "/assets/images/vsport/community/community-01.jpg",
+      "roleId": 3,
+      "coSoId": null,
+      "monTheThaoYeuThichId": 2,
+      "diemUyTin": 88
+    }
+  ],
+  "favoriteSports": [
+    {
+      "accountId": 3,
+      "monTheThaoId": 1
+    },
+    {
+      "accountId": 6,
+      "monTheThaoId": 2
+    }
+  ],
+  "capabilities": [
+    {
+      "capabilityId": 1,
+      "coSoId": 1,
+      "capabilityType": "SAN",
+      "trangThai": "APPROVED"
+    },
+    {
+      "capabilityId": 2,
+      "coSoId": 1,
+      "capabilityType": "SAN_PHAM",
+      "trangThai": "APPROVED"
+    },
+    {
+      "capabilityId": 3,
+      "coSoId": 1,
+      "capabilityType": "THUE_DUNG_CU",
+      "trangThai": "APPROVED"
+    },
+    {
+      "capabilityId": 4,
+      "coSoId": 1,
+      "capabilityType": "DO_AN_NUOC_UONG",
+      "trangThai": "APPROVED"
+    },
+    {
+      "capabilityId": 5,
+      "coSoId": 1,
+      "capabilityType": "DICH_VU_THE_THAO",
+      "trangThai": "APPROVED"
+    },
+    {
+      "capabilityId": 6,
+      "coSoId": 2,
+      "capabilityType": "SAN",
+      "trangThai": "APPROVED"
+    },
+    {
+      "capabilityId": 7,
+      "coSoId": 2,
+      "capabilityType": "SAN_PHAM",
+      "trangThai": "APPROVED"
+    },
+    {
+      "capabilityId": 8,
+      "coSoId": 2,
+      "capabilityType": "THUE_DUNG_CU",
+      "trangThai": "APPROVED"
+    },
+    {
+      "capabilityId": 9,
+      "coSoId": 2,
+      "capabilityType": "DO_AN_NUOC_UONG",
+      "trangThai": "APPROVED"
+    },
+    {
+      "capabilityId": 10,
+      "coSoId": 2,
+      "capabilityType": "DICH_VU_THE_THAO",
+      "trangThai": "APPROVED"
+    },
+    {
+      "capabilityId": 11,
+      "coSoId": 3,
+      "capabilityType": "SAN",
+      "trangThai": "APPROVED"
+    },
+    {
+      "capabilityId": 12,
+      "coSoId": 3,
+      "capabilityType": "SAN_PHAM",
+      "trangThai": "APPROVED"
+    },
+    {
+      "capabilityId": 13,
+      "coSoId": 3,
+      "capabilityType": "THUE_DUNG_CU",
+      "trangThai": "APPROVED"
+    },
+    {
+      "capabilityId": 14,
+      "coSoId": 3,
+      "capabilityType": "DO_AN_NUOC_UONG",
+      "trangThai": "APPROVED"
+    },
+    {
+      "capabilityId": 15,
+      "coSoId": 3,
+      "capabilityType": "DICH_VU_THE_THAO",
+      "trangThai": "APPROVED"
+    }
+  ],
+  "bankAccounts": [
+    {
+      "coSoId": 1,
+      "bankName": "Vietcombank",
+      "bankShortCode": "VCB",
+      "accountName": "V-SPORT ARENA Q1",
+      "accountNumber": "0071001234567"
+    },
+    {
+      "coSoId": 2,
+      "bankName": "MB Bank",
+      "bankShortCode": "MB",
+      "accountName": "V-SPORT CENTER TD",
+      "accountNumber": "0901234567890"
+    },
+    {
+      "coSoId": 3,
+      "bankName": "Techcombank",
+      "bankShortCode": "TCB",
+      "accountName": "V-SPORT CLUB VT",
+      "accountNumber": "1903456789012"
+    }
+  ],
+  "courtTypes": [
+    {
+      "loaiSanId": 1,
+      "monTheThaoId": 1,
+      "tenLoai": "Sân Bóng đá 5 người",
+      "gioBatDauLenDen": "17:30:00",
+      "gioKetThucLenDen": "23:00:00",
+      "giaKhongDen": 300000.0,
+      "giaCoDen": 420000.0,
+      "coSoId": 1
+    },
+    {
+      "loaiSanId": 2,
+      "monTheThaoId": 1,
+      "tenLoai": "Sân Bóng đá 7 người",
+      "gioBatDauLenDen": "17:30:00",
+      "gioKetThucLenDen": "23:00:00",
+      "giaKhongDen": 550000.0,
+      "giaCoDen": 750000.0,
+      "coSoId": 1
+    },
+    {
+      "loaiSanId": 3,
+      "monTheThaoId": 2,
+      "tenLoai": "Sân Cầu lông thảm PVC",
+      "gioBatDauLenDen": "17:00:00",
+      "gioKetThucLenDen": "23:00:00",
+      "giaKhongDen": 90000.0,
+      "giaCoDen": 130000.0,
+      "coSoId": 1
+    },
+    {
+      "loaiSanId": 4,
+      "monTheThaoId": 3,
+      "tenLoai": "Sân Pickleball chuẩn Mỹ",
+      "gioBatDauLenDen": "17:30:00",
+      "gioKetThucLenDen": "22:30:00",
+      "giaKhongDen": 140000.0,
+      "giaCoDen": 190000.0,
+      "coSoId": 2
+    },
+    {
+      "loaiSanId": 5,
+      "monTheThaoId": 2,
+      "tenLoai": "Sân Cầu lông VIP",
+      "gioBatDauLenDen": "17:00:00",
+      "gioKetThucLenDen": "22:30:00",
+      "giaKhongDen": 110000.0,
+      "giaCoDen": 150000.0,
+      "coSoId": 2
+    },
+    {
+      "loaiSanId": 6,
+      "monTheThaoId": 4,
+      "tenLoai": "Sân Tennis cứng ngoài trời",
+      "gioBatDauLenDen": "17:30:00",
+      "gioKetThucLenDen": "22:00:00",
+      "giaKhongDen": 220000.0,
+      "giaCoDen": 320000.0,
+      "coSoId": 3
+    }
+  ],
+  "courts": [
+    {
+      "sanId": 1,
+      "loaiSanId": 1,
+      "coSoId": 1,
+      "tenSan": "Sân 5A - Cỏ FIFA",
+      "trangThai": "Sẵn sàng",
+      "moTa": "Mặt cỏ nhân tạo êm, thoát nước nhanh",
+      "hinhAnh": "/assets/images/vsport/courts/court-football.jpg"
+    },
+    {
+      "sanId": 2,
+      "loaiSanId": 1,
+      "coSoId": 1,
+      "tenSan": "Sân 5B - Cỏ FIFA",
+      "trangThai": "Sẵn sàng",
+      "moTa": "Gần khu vực khán đài và nước uống",
+      "hinhAnh": "/assets/images/vsport/courts/court-football.jpg"
+    },
+    {
+      "sanId": 3,
+      "loaiSanId": 2,
+      "coSoId": 1,
+      "tenSan": "Sân 7A - Trung tâm",
+      "trangThai": "Sẵn sàng",
+      "moTa": "Sân 7 người tiêu chuẩn thi đấu phong trào",
+      "hinhAnh": "/assets/images/vsport/courts/court-football.jpg"
+    },
+    {
+      "sanId": 4,
+      "loaiSanId": 3,
+      "coSoId": 1,
+      "tenSan": "Sân Cầu lông 01",
+      "trangThai": "Sẵn sàng",
+      "moTa": "Thảm Yonex chống trượt, trần cao 10m",
+      "hinhAnh": "/assets/images/vsport/courts/court-badminton.jpg"
+    },
+    {
+      "sanId": 5,
+      "loaiSanId": 3,
+      "coSoId": 1,
+      "tenSan": "Sân Cầu lông 02",
+      "trangThai": "Sẵn sàng",
+      "moTa": "Có điều hòa và khu thay đồ riêng",
+      "hinhAnh": "/assets/images/vsport/courts/court-badminton.jpg"
+    },
+    {
+      "sanId": 6,
+      "loaiSanId": 4,
+      "coSoId": 2,
+      "tenSan": "Pickleball Court 01",
+      "trangThai": "Sẵn sàng",
+      "moTa": "Mặt sân Acrylic 6 lớp chuẩn USAPA",
+      "hinhAnh": "/assets/images/vsport/courts/court-pickleball.jpg"
+    },
+    {
+      "sanId": 7,
+      "loaiSanId": 4,
+      "coSoId": 2,
+      "tenSan": "Pickleball Court 02",
+      "trangThai": "Sẵn sàng",
+      "moTa": "Mái che toàn phần, cho thuê vợt tại chỗ",
+      "hinhAnh": "/assets/images/vsport/courts/court-pickleball.jpg"
+    },
+    {
+      "sanId": 8,
+      "loaiSanId": 5,
+      "coSoId": 2,
+      "tenSan": "Sân Cầu lông VIP 01",
+      "trangThai": "Sẵn sàng",
+      "moTa": "Sân thảm thi đấu chuyên nghiệp",
+      "hinhAnh": "/assets/images/vsport/courts/court-badminton.jpg"
+    },
+    {
+      "sanId": 9,
+      "loaiSanId": 6,
+      "coSoId": 3,
+      "tenSan": "Sân Tennis Biển 01",
+      "trangThai": "Sẵn sàng",
+      "moTa": "View biển Thùy Vân thoáng mát",
+      "hinhAnh": "/assets/images/vsport/courts/court-tennis.jpg"
+    }
+  ],
+  "productCategories": [
+    {
+      "danhMucId": 1,
+      "tenDanhMuc": "Nước giải khát"
+    },
+    {
+      "danhMucId": 2,
+      "tenDanhMuc": "Dụng cụ thể thao"
+    },
+    {
+      "danhMucId": 3,
+      "tenDanhMuc": "Thuê thiết bị"
+    },
+    {
+      "danhMucId": 4,
+      "tenDanhMuc": "Phụ kiện"
+    }
+  ],
+  "products": [
+    {
+      "sanPhamId": 1,
+      "danhMucId": 1,
+      "coSoId": 1,
+      "soLuongTon": 120,
+      "tenSanPham": "Nước điện giải Pocari Sweat 500ml",
+      "donViTinh": "Chai",
+      "trangThai": "Đang kinh doanh",
+      "skuCode": "SP-NUOC-01",
+      "moTa": "Bù khoáng nhanh khi vận động cường độ cao",
+      "hinhAnh": "/assets/images/vsport/categories/basketball.jpg",
+      "donGia": 20000.0,
+      "giaNhap": 12000.0
+    },
+    {
+      "sanPhamId": 2,
+      "danhMucId": 1,
+      "coSoId": 1,
+      "soLuongTon": 200,
+      "tenSanPham": "Nước suối Aquafina 500ml",
+      "donViTinh": "Chai",
+      "trangThai": "Đang kinh doanh",
+      "skuCode": "SP-NUOC-02",
+      "moTa": "Nước tinh khiết ướp lạnh",
+      "hinhAnh": "/assets/images/vsport/categories/basketball.jpg",
+      "donGia": 10000.0,
+      "giaNhap": 5000.0
+    },
+    {
+      "sanPhamId": 3,
+      "danhMucId": 3,
+      "coSoId": 1,
+      "soLuongTon": 25,
+      "tenSanPham": "Thuê áo Pitch (Bộ 7 cái)",
+      "donViTinh": "Bộ",
+      "trangThai": "Đang kinh doanh",
+      "skuCode": "DV-AO-01",
+      "moTa": "Áo chia đội thoáng khí giặt sạch mỗi ngày",
+      "hinhAnh": "/assets/images/vsport/categories/football.jpg",
+      "donGia": 35000.0,
+      "giaNhap": 0.0
+    },
+    {
+      "sanPhamId": 4,
+      "danhMucId": 3,
+      "coSoId": 1,
+      "soLuongTon": 18,
+      "tenSanPham": "Thuê vợt cầu lông Yonex",
+      "donViTinh": "Cây/ca",
+      "trangThai": "Đang kinh doanh",
+      "skuCode": "DV-VOT-01",
+      "moTa": "Căng sẵn lưới 10.5kg",
+      "hinhAnh": "/assets/images/vsport/categories/badminton.jpg",
+      "donGia": 40000.0,
+      "giaNhap": 0.0
+    },
+    {
+      "sanPhamId": 5,
+      "danhMucId": 2,
+      "coSoId": 1,
+      "soLuongTon": 40,
+      "tenSanPham": "Ống cầu lông Thành Công (12 quả)",
+      "donViTinh": "Ống",
+      "trangThai": "Đang kinh doanh",
+      "skuCode": "SP-CAU-01",
+      "moTa": "Cầu lông tự nhiên bay đầm, bền cánh",
+      "hinhAnh": "/assets/images/vsport/categories/badminton.jpg",
+      "donGia": 245000.0,
+      "giaNhap": 190000.0
+    },
+    {
+      "sanPhamId": 6,
+      "danhMucId": 4,
+      "coSoId": 1,
+      "soLuongTon": 85,
+      "tenSanPham": "Quấn cán vợt chống trượt",
+      "donViTinh": "Cuộn",
+      "trangThai": "Đang kinh doanh",
+      "skuCode": "SP-PK-01",
+      "moTa": "Thấm hút mồ hôi tốt",
+      "hinhAnh": "/assets/images/vsport/categories/tennis.jpg",
+      "donGia": 25000.0,
+      "giaNhap": 12000.0
+    },
+    {
+      "sanPhamId": 7,
+      "danhMucId": 3,
+      "coSoId": 2,
+      "soLuongTon": 20,
+      "tenSanPham": "Thuê vợt Pickleball Carbon",
+      "donViTinh": "Cây/ca",
+      "trangThai": "Đang kinh doanh",
+      "skuCode": "DV-PKB-01",
+      "moTa": "Vợt mặt carbon nhám kiểm soát bóng tốt",
+      "hinhAnh": "/assets/images/vsport/categories/pickleball.jpg",
+      "donGia": 50000.0,
+      "giaNhap": 0.0
+    },
+    {
+      "sanPhamId": 8,
+      "danhMucId": 2,
+      "coSoId": 2,
+      "soLuongTon": 35,
+      "tenSanPham": "Bóng Pickleball Franklin X-40 (Hộp 3 quả)",
+      "donViTinh": "Hộp",
+      "trangThai": "Đang kinh doanh",
+      "skuCode": "SP-PKB-02",
+      "moTa": "Bóng thi đấu tiêu chuẩn ngoài trời",
+      "hinhAnh": "/assets/images/vsport/categories/pickleball.jpg",
+      "donGia": 210000.0,
+      "giaNhap": 150000.0
+    },
+    {
+      "sanPhamId": 9,
+      "danhMucId": 1,
+      "coSoId": 2,
+      "soLuongTon": 60,
+      "tenSanPham": "Trà chanh mật ong ướp lạnh",
+      "donViTinh": "Ly",
+      "trangThai": "Đang kinh doanh",
+      "skuCode": "SP-NUOC-03",
+      "moTa": "Giải nhiệt tức thì sau trận đấu",
+      "hinhAnh": "/assets/images/vsport/categories/basketball.jpg",
+      "donGia": 22000.0,
+      "giaNhap": 10000.0
+    },
+    {
+      "sanPhamId": 10,
+      "danhMucId": 3,
+      "coSoId": 3,
+      "soLuongTon": 12,
+      "tenSanPham": "Thuê vợt Tennis Babolat",
+      "donViTinh": "Cây/ca",
+      "trangThai": "Đang kinh doanh",
+      "skuCode": "DV-TEN-01",
+      "moTa": "Trọng lượng 285g dễ đánh",
+      "hinhAnh": "/assets/images/vsport/categories/tennis.jpg",
+      "donGia": 60000.0,
+      "giaNhap": 0.0
+    }
+  ],
+  "bookings": [
+    {
+      "datSanId": 1,
+      "accountId": 3,
+      "sanId": 1,
+      "ngayDat": "2026-11-25",
+      "gioBatDau": "18:00:00",
+      "gioKetThuc": "19:30:00",
+      "trangThai": "Đã hoàn thành",
+      "ghiChu": "Đặt sân đá giao hữu cuối tuần",
+      "nguonDatSan": "ONLINE",
+      "actualStartTime": "18:00:00",
+      "actualEndTime": "19:30:00",
+      "holdExpiresAt": null,
+      "paymentMethodConfirmed": "PayOS",
+      "apDungGiaCoDen": true,
+      "tongTienDuKien": 630000.0
+    },
+    {
+      "datSanId": 2,
+      "accountId": 6,
+      "sanId": 4,
+      "ngayDat": "2026-11-26",
+      "gioBatDau": "22:00:00",
+      "gioKetThuc": "23:30:00",
+      "trangThai": "Đang sử dụng",
+      "ghiChu": "Khách đã check-in vào sân",
+      "nguonDatSan": "ONLINE",
+      "actualStartTime": "22:00:00",
+      "actualEndTime": null,
+      "holdExpiresAt": null,
+      "paymentMethodConfirmed": "Tiền mặt",
+      "apDungGiaCoDen": true,
+      "tongTienDuKien": 195000.0
+    },
+    {
+      "datSanId": 3,
+      "accountId": 3,
+      "sanId": 3,
+      "ngayDat": "2026-11-27",
+      "gioBatDau": "19:00:00",
+      "gioKetThuc": "20:30:00",
+      "trangThai": "Đã xác nhận",
+      "ghiChu": "Tìm thêm đối đá sân 7",
+      "nguonDatSan": "ONLINE",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "holdExpiresAt": null,
+      "paymentMethodConfirmed": "PayOS",
+      "apDungGiaCoDen": true,
+      "tongTienDuKien": 1125000.0
+    },
+    {
+      "datSanId": 4,
+      "accountId": 3,
+      "sanId": 6,
+      "ngayDat": "2026-11-27",
+      "gioBatDau": "17:30:00",
+      "gioKetThuc": "19:00:00",
+      "trangThai": "Quá hạn",
+      "ghiChu": "Giữ chỗ Pickleball buổi chiều [Tự động: Quá hạn giữ chỗ thanh toán]",
+      "nguonDatSan": "ONLINE",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "holdExpiresAt": "2026-11-26T15:43:54.886366",
+      "paymentMethodConfirmed": null,
+      "apDungGiaCoDen": true,
+      "tongTienDuKien": 285000.0
+    },
+    {
+      "datSanId": 5,
+      "accountId": 3,
+      "sanId": 2,
+      "ngayDat": "2026-11-27",
+      "gioBatDau": "20:00:00",
+      "gioKetThuc": "21:00:00",
+      "trangThai": "Chờ xác nhận",
+      "ghiChu": "Thanh toán tại quầy khi đến sân",
+      "nguonDatSan": "ONLINE",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "holdExpiresAt": null,
+      "paymentMethodConfirmed": null,
+      "apDungGiaCoDen": true,
+      "tongTienDuKien": 420000.0
+    },
+    {
+      "datSanId": 6,
+      "accountId": 6,
+      "sanId": 6,
+      "ngayDat": "2026-11-24",
+      "gioBatDau": "16:00:00",
+      "gioKetThuc": "17:30:00",
+      "trangThai": "Đã hoàn thành",
+      "ghiChu": "Tập Pickleball cùng bạn",
+      "nguonDatSan": "ONLINE",
+      "actualStartTime": "16:00:00",
+      "actualEndTime": "17:30:00",
+      "holdExpiresAt": null,
+      "paymentMethodConfirmed": "PayOS",
+      "apDungGiaCoDen": false,
+      "tongTienDuKien": 210000.0
+    }
+  ],
+  "bookingServices": [
+    {
+      "id": 1,
+      "datSanId": 3,
+      "sanPhamId": 1,
+      "quantity": 4,
+      "unitPrice": 20000.0,
+      "totalPrice": 80000.0,
+      "status": "PENDING",
+      "note": "Ướp lạnh sẵn giúp đội"
+    },
+    {
+      "id": 2,
+      "datSanId": 3,
+      "sanPhamId": 3,
+      "quantity": 1,
+      "unitPrice": 35000.0,
+      "totalPrice": 35000.0,
+      "status": "PENDING",
+      "note": "Áo màu cam"
+    }
+  ],
+  "invoices": [
+    {
+      "hoaDonId": 1,
+      "datSanId": 1,
+      "accountIdKhachHang": 3,
+      "accountIdNhanVien": 4,
+      "khuyenMaiId": null,
+      "ngayLap": "2026-11-25T19:35",
+      "phuongThucThanhToan": "PayOS",
+      "trangThaiThanhToan": "Đã thanh toán",
+      "loaiHoaDon": "MAIN",
+      "tongTienSan": 630000.0,
+      "tongTienDichVu": 55000.0,
+      "phiGuiXe": 0.0,
+      "giamGia": 0.0,
+      "tongThanhToan": 685000.0
+    },
+    {
+      "hoaDonId": 2,
+      "datSanId": 2,
+      "accountIdKhachHang": 6,
+      "accountIdNhanVien": 4,
+      "khuyenMaiId": null,
+      "ngayLap": "2026-11-26T22:00",
+      "phuongThucThanhToan": "Tiền mặt",
+      "trangThaiThanhToan": "Chưa thanh toán",
+      "loaiHoaDon": "MAIN",
+      "tongTienSan": 195000.0,
+      "tongTienDichVu": 40000.0,
+      "phiGuiXe": 0.0,
+      "giamGia": 0.0,
+      "tongThanhToan": 235000.0
+    },
+    {
+      "hoaDonId": 3,
+      "datSanId": 6,
+      "accountIdKhachHang": 6,
+      "accountIdNhanVien": 5,
+      "khuyenMaiId": null,
+      "ngayLap": "2026-11-24T17:35",
+      "phuongThucThanhToan": "PayOS",
+      "trangThaiThanhToan": "Đã thanh toán",
+      "loaiHoaDon": "MAIN",
+      "tongTienSan": 210000.0,
+      "tongTienDichVu": 50000.0,
+      "phiGuiXe": 0.0,
+      "giamGia": 0.0,
+      "tongThanhToan": 260000.0
+    }
+  ],
+  "invoiceDetails": [
+    {
+      "chiTietId": 1,
+      "hoaDonId": 1,
+      "sanPhamId": 1,
+      "soLuong": 1,
+      "donGiaTaiThoiDiemBan": 20000.0,
+      "thanhTien": 20000.0
+    },
+    {
+      "chiTietId": 2,
+      "hoaDonId": 1,
+      "sanPhamId": 3,
+      "soLuong": 1,
+      "donGiaTaiThoiDiemBan": 35000.0,
+      "thanhTien": 35000.0
+    },
+    {
+      "chiTietId": 3,
+      "hoaDonId": 2,
+      "sanPhamId": 4,
+      "soLuong": 1,
+      "donGiaTaiThoiDiemBan": 40000.0,
+      "thanhTien": 40000.0
+    },
+    {
+      "chiTietId": 4,
+      "hoaDonId": 3,
+      "sanPhamId": 7,
+      "soLuong": 1,
+      "donGiaTaiThoiDiemBan": 50000.0,
+      "thanhTien": 50000.0
+    }
+  ],
+  "promotions": [
+    {
+      "khuyenMaiId": 1,
+      "soLanDaDung": 18,
+      "soLanToiDa": 200,
+      "coSoId": 1,
+      "maCode": "VSPORT10",
+      "moTa": "Giảm 10% cho mọi lượt đặt sân tại V-SPORT Arena Q1",
+      "loaiGiam": "PERCENT",
+      "ngayBatDau": "2026-11-19",
+      "ngayKetThuc": "2026-12-26",
+      "trangThai": "Hoạt động",
+      "giaTriGiam": 10.0,
+      "giaTriToiThieu": 200000.0,
+      "giamToiDa": 100000.0,
+      "hienThiCongKhai": true
+    },
+    {
+      "khuyenMaiId": 2,
+      "soLanDaDung": 9,
+      "soLanToiDa": 150,
+      "coSoId": 2,
+      "maCode": "PICKLE50K",
+      "moTa": "Giảm ngay 50.000đ khi đặt sân Pickleball từ 250.000đ",
+      "loaiGiam": "FIXED",
+      "ngayBatDau": "2026-11-21",
+      "ngayKetThuc": "2027-01-10",
+      "trangThai": "Hoạt động",
+      "giaTriGiam": 50000.0,
+      "giaTriToiThieu": 250000.0,
+      "giamToiDa": 50000.0,
+      "hienThiCongKhai": true
+    },
+    {
+      "khuyenMaiId": 3,
+      "soLanDaDung": 42,
+      "soLanToiDa": 500,
+      "coSoId": null,
+      "maCode": "WELCOME20",
+      "moTa": "Ưu đãi thành viên mới giảm 20% tối đa 80.000đ",
+      "loaiGiam": "PERCENT",
+      "ngayBatDau": "2026-11-16",
+      "ngayKetThuc": "2027-01-25",
+      "trangThai": "Hoạt động",
+      "giaTriGiam": 20.0,
+      "giaTriToiThieu": 150000.0,
+      "giamToiDa": 80000.0,
+      "hienThiCongKhai": true
+    }
+  ],
+  "reviews": [
+    {
+      "danhGiaId": 1,
+      "datSanId": 1,
+      "accountIdNguoiDanhGia": 3,
+      "soSao": 5,
+      "accountIdNguoiBiDanhGia": null,
+      "binhLuan": "Mặt cỏ mới rất êm, đèn sáng rõ, nhân viên hỗ trợ nhiệt tình!",
+      "ngayDanhGia": "2026-11-26T22:13:54.886366"
+    },
+    {
+      "danhGiaId": 2,
+      "datSanId": 6,
+      "accountIdNguoiDanhGia": 6,
+      "soSao": 5,
+      "accountIdNguoiBiDanhGia": null,
+      "binhLuan": "Sân Pickleball đẹp, có mái che nên chơi chiều không bị nắng.",
+      "ngayDanhGia": "2026-11-26T22:13:54.886366"
+    }
+  ],
+  "teams": [
+    {
+      "teamId": 1,
+      "sportId": 1,
+      "captainAccountId": 3,
+      "maxMembers": 14,
+      "teamName": "FC Bến Thành",
+      "description": "Đội bóng đá phong trào 7v7 chơi tối thứ 4 \u0026 thứ 7 hàng tuần",
+      "locationText": "Quận 1, TP.HCM",
+      "avatarPath": "/assets/images/vsport/community/team-01.jpg"
+    },
+    {
+      "teamId": 2,
+      "sportId": 2,
+      "captainAccountId": 6,
+      "maxMembers": 12,
+      "teamName": "Thủ Đức Smashers",
+      "description": "CLB cầu lông \u0026 pickleball giao lưu trình độ trung bình - khá",
+      "locationText": "TP. Thủ Đức, TP.HCM",
+      "avatarPath": "/assets/images/vsport/community/community-02.jpg"
+    }
+  ],
+  "teamMembers": [
+    {
+      "teamMemberId": 1,
+      "teamId": 1,
+      "accountId": 3,
+      "memberRole": "CAPTAIN",
+      "memberStatus": "ACTIVE"
+    },
+    {
+      "teamMemberId": 2,
+      "teamId": 1,
+      "accountId": 6,
+      "memberRole": "MEMBER",
+      "memberStatus": "ACTIVE"
+    },
+    {
+      "teamMemberId": 3,
+      "teamId": 2,
+      "accountId": 6,
+      "memberRole": "CAPTAIN",
+      "memberStatus": "ACTIVE"
+    }
+  ],
+  "matchmaking": [
+    {
+      "keoId": 1,
+      "datSanId": 3,
+      "accountIdNguoiTao": 3,
+      "monTheThaoId": 1,
+      "moTa": "[VS_META]{\"cap\":6,\"approve\":\"auto\",\"minRep\":60}[/VS_META]Tìm thêm 4-5 anh em đá giao hữu sân 7A tối mai, chia đều tiền sân!",
+      "trinhDo": "Trung bình - Khá",
+      "trangThai": "Đang mở"
+    }
+  ],
+  "shifts": [
+    {
+      "caLamViecId": 1,
+      "accountId": 4,
+      "coSoId": 1,
+      "thu": 2,
+      "isPublished": true,
+      "ngayLam": "2026-11-26",
+      "gioBatDau": "06:00:00",
+      "gioKetThuc": "14:00:00",
+      "ghiChu": "Ca sáng trực quầy \u0026 check-in",
+      "tenCa": "Ca sáng",
+      "viTri": "Lễ tân",
+      "trangThai": "Published"
+    },
+    {
+      "caLamViecId": 2,
+      "accountId": 4,
+      "coSoId": 1,
+      "thu": 2,
+      "isPublished": true,
+      "ngayLam": "2026-11-26",
+      "gioBatDau": "14:00:00",
+      "gioKetThuc": "22:00:00",
+      "ghiChu": "Ca chiều tối giờ cao điểm",
+      "tenCa": "Ca chiều",
+      "viTri": "Lễ tân",
+      "trangThai": "Published"
+    },
+    {
+      "caLamViecId": 3,
+      "accountId": 4,
+      "coSoId": 1,
+      "thu": 3,
+      "isPublished": true,
+      "ngayLam": "2026-11-27",
+      "gioBatDau": "14:00:00",
+      "gioKetThuc": "22:00:00",
+      "ghiChu": "Trực sân cuối tuần",
+      "tenCa": "Ca chiều",
+      "viTri": "Lễ tân",
+      "trangThai": "Published"
+    }
+  ],
+  "notifications": [
+    {
+      "thongBaoId": 1,
+      "accountId": 3,
+      "tieuDe": "Đặt sân thành công #3",
+      "noiDung": "Lịch đặt Sân 7A ngày mai (19:00 - 20:30) đã được xác nhận.",
+      "loaiThongBao": "BOOKING_CONFIRMED",
+      "duongDan": "/customer/lich-su-dat-san",
+      "daDoc": false
+    },
+    {
+      "thongBaoId": 2,
+      "accountId": 3,
+      "tieuDe": "Nhắc thanh toán giữ chỗ #4",
+      "noiDung": "Lịch đặt Pickleball Court 01 đang chờ thanh toán trong giỏ hàng.",
+      "loaiThongBao": "PAYMENT_REMINDER",
+      "duongDan": "/customer/gio-hang",
+      "daDoc": false
+    },
+    {
+      "thongBaoId": 3,
+      "accountId": 2,
+      "tieuDe": "Báo cáo doanh thu V-SPORT",
+      "noiDung": "Cơ sở V-SPORT Arena Quận 1 đã ghi nhận lượt đặt mới.",
+      "loaiThongBao": "SYSTEM",
+      "duongDan": "/manager/dashboard",
+      "daDoc": false
+    }
+  ],
+  "courtQrs": [
+    {
+      "sanQrId": 1,
+      "sanId": 1,
+      "createdBy": 2,
+      "token": "1aded242-32ab-44fe-a930-d28b2c7ab734",
+      "shortCode": "SAN5A1",
+      "trangThai": "ACTIVE"
+    },
+    {
+      "sanQrId": 2,
+      "sanId": 4,
+      "createdBy": 2,
+      "token": "8f55b1f1-86b4-465d-949f-e055cc282fe6",
+      "shortCode": "CAUL01",
+      "trangThai": "ACTIVE"
+    },
+    {
+      "sanQrId": 3,
+      "sanId": 6,
+      "createdBy": 5,
+      "token": "620fe7c7-8ba6-48e5-9fb2-5cbe21345094",
+      "shortCode": "PKB001",
+      "trangThai": "ACTIVE"
+    }
+  ]
+}

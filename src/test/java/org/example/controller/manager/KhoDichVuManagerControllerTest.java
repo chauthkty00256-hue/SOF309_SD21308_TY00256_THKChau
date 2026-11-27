@@ -113,7 +113,7 @@ public class KhoDichVuManagerControllerTest {
     }
 
     @ParameterizedTest(name = "[{index}] {3}")
-    @DisplayName("TC_MGR_04: Kiểm tra biên Nhập kho & Xuất kho (<= 0 hoặc vượt tồn kho)")
+    @DisplayName("TC_MGR_05: Kiểm tra biên Nhập kho & Xuất kho (<= 0 hoặc vượt tồn kho)")
     @CsvSource({
             // action, productId, amount, caseLabel, expectedError
             "nhap-kho, 1, 0, Nhập kho số lượng 0, Số lượng nhập kho phải lớn hơn 0.",
@@ -146,7 +146,7 @@ public class KhoDichVuManagerControllerTest {
     }
 
     @Test
-    @DisplayName("TC_ADM_07 & TC_ADM_08 (RBAC): Chặn Khách hàng (403) và chặn Manager CoSo 1 xóa sản phẩm của CoSo 2")
+    @DisplayName("TC_AUTH_12 & TC_AUTH_13 (RBAC): Chặn Khách hàng (403) và chặn Manager CoSo 1 xóa sản phẩm của CoSo 2")
     void testRbacAndCrossBranchIsolation() throws Exception {
         // Case 1: Customer truy cập /manager/kho-dich-vu -> 403
         Map<String, Object> custMap = MockTestEnvironment.newSessionMap();
@@ -172,7 +172,7 @@ public class KhoDichVuManagerControllerTest {
     }
 
     @Test
-    @DisplayName("Exception Testing (assertThrows): BranchSecurityUtils ném ForbiddenException & KhoDichVuManagerServlet ném NullPointerException khi Manager chưa gắn CoSoID")
+    @DisplayName("TC_AUTH_13 & TC_AUTH_15 (assertThrows): BranchSecurityUtils ném ForbiddenException & KhoDichVuManagerServlet ném NullPointerException khi Manager chưa gắn CoSoID")
     void testAssertThrowsBranchIsolationAndNullCoSo() {
         ForbiddenException forbiddenEx = assertThrows(
                 ForbiddenException.class,

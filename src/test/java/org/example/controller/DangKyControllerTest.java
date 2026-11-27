@@ -45,7 +45,7 @@ public class DangKyControllerTest {
     }
 
     @ParameterizedTest(name = "[{index}] {8}")
-    @DisplayName("TC_REG_02..08: Kiểm tra biên & validation đầu vào Form Đăng ký qua @CsvSource")
+    @DisplayName("TC_REG_02..07: Kiểm tra biên & validation đầu vào Form Đăng ký qua @CsvSource")
     @Timeout(value = 5, unit = TimeUnit.SECONDS)
     @CsvSource(nullValues = "NULL", value = {
             // password, confirm, agree, username, email, phone, fullname, expectedMessage, caseLabel
@@ -98,7 +98,7 @@ public class DangKyControllerTest {
     }
 
     @Test
-    @DisplayName("TC_REG_08b: Họ và tên vượt quá biên 100 ký tự (101 ký tự) bị từ chối")
+    @DisplayName("TC_REG_07b: Họ và tên vượt quá biên 100 ký tự (101 ký tự) bị từ chối")
     void testRegisterFullnameExceedsMaxBoundary() throws Exception {
         Map<String, Object> sessionMap = MockTestEnvironment.newSessionMap();
         HttpSession session = MockTestEnvironment.createInMemorySession(sessionMap);
@@ -164,7 +164,7 @@ public class DangKyControllerTest {
     }
 
     @Test
-    @DisplayName("TC_REG_09 & TC_ADM_03c: Sai OTP đăng ký bị từ chối và sai 5 lần luồng ADMIN_ADD bị khóa 15 phút")
+    @DisplayName("TC_REG_08 & TC_REG_09: Sai OTP đăng ký bị từ chối và sai 5 lần luồng ADMIN_ADD bị khóa 15 phút")
     void testWrongOtpAndAdminLockoutAfterFiveAttempts() throws Exception {
         // Case 1: REGISTER sai OTP
         Map<String, Object> regSessionMap = MockTestEnvironment.newSessionMap();

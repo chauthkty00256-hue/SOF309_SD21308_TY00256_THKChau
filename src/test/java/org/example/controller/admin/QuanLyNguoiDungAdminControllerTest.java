@@ -132,7 +132,7 @@ public class QuanLyNguoiDungAdminControllerTest {
     }
 
     @Test
-    @DisplayName("TC_ADM_02 & TC_ADM_07 (RBAC): Admin bị chặn sửa chi nhánh (403); Customer & Manager bị chặn khỏi /admin/tong-quan")
+    @DisplayName("TC_ADM_01 & TC_AUTH_12 (RBAC): Admin bị chặn sửa chi nhánh (403); Customer & Manager bị chặn khỏi /admin/tong-quan")
     void testAdminRoutePermissionsAndBranchEditForbidden() throws Exception {
         // 1. Admin không có quyền sửa chi nhánh -> 403
         Map<String, Object> adminMap = MockTestEnvironment.newSessionMap();
@@ -167,7 +167,7 @@ public class QuanLyNguoiDungAdminControllerTest {
     }
 
     @Test
-    @DisplayName("TC_ADM_03b: Admin không thể xóa mềm tài khoản Quản trị viên (RoleID=1)")
+    @DisplayName("TC_ADM_04: Admin không thể xóa mềm tài khoản Quản trị viên (RoleID=1)")
     void testAdminCannotSoftDeleteAdminAccount() throws Exception {
         Map<String, Object> sessionMap = MockTestEnvironment.newSessionMap();
         sessionMap.put("user", MockTestEnvironment.buildUser(1, 1, null, "admin", "admin@vsport.vn"));
@@ -184,7 +184,7 @@ public class QuanLyNguoiDungAdminControllerTest {
     }
 
     @Test
-    @DisplayName("Exception Testing (assertThrows): QuanLyNguoiDungServlet ném NumberFormatException khi tham số id / accountId không phải số")
+    @DisplayName("TC_ADM_04b (assertThrows): QuanLyNguoiDungServlet ném NumberFormatException khi tham số id / accountId không phải số")
     void testAssertThrowsNumberFormatExceptionOnInvalidIds() {
         Map<String, Object> sessionMap = MockTestEnvironment.newSessionMap();
         sessionMap.put("user", MockTestEnvironment.buildUser(1, 1, null, "admin", "admin@vsport.vn"));

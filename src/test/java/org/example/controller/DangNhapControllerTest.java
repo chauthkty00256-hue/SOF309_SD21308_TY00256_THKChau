@@ -40,7 +40,7 @@ public class DangNhapControllerTest {
     }
 
     @ParameterizedTest(name = "[{index}] Login {0} ({1}) -> {4}")
-    @DisplayName("TC_LOGIN_01..04: Đăng nhập thành công đầy đủ 4 vai trò và SĐT biến thể từ mock-data")
+    @DisplayName("TC_AUTH_01..04: Đăng nhập thành công đầy đủ 4 vai trò và SĐT biến thể từ mock-data")
     @Timeout(value = 5, unit = TimeUnit.SECONDS)
     @CsvSource({
             // loginMethod, identifier, password, expectedRoleId, expectedRedirect
@@ -88,7 +88,7 @@ public class DangNhapControllerTest {
     }
 
     @ParameterizedTest(name = "[{index}] {4}")
-    @DisplayName("TC_LOGIN_05..07: Kiểm tra biên & đầu vào không hợp lệ khi đăng nhập qua @CsvSource")
+    @DisplayName("TC_AUTH_05..07: Kiểm tra biên & đầu vào không hợp lệ khi đăng nhập qua @CsvSource")
     @CsvSource(nullValues = "NULL", value = {
             // loginMethod, identifier, password, expectedError, caseLabel
             "account, '', 123456, Tài khoản và mật khẩu không được để trống!, Trống username",
@@ -130,7 +130,7 @@ public class DangNhapControllerTest {
     }
 
     @Test
-    @DisplayName("TC_LOGIN_08: Rate Limit chặn từ lần đăng nhập thứ 6 trong 5 phút")
+    @DisplayName("TC_AUTH_08: Rate Limit chặn từ lần đăng nhập thứ 6 trong 5 phút")
     void testLoginRateLimitAfterFiveAttempts() throws Exception {
         String targetUser = "ratelimit_user_" + System.nanoTime();
         String clientIp = "10.0.2.55";
@@ -155,7 +155,7 @@ public class DangNhapControllerTest {
     }
 
     @Test
-    @DisplayName("Chặn Open Redirect (//evil.com) khi GET /dangnhap")
+    @DisplayName("TC_AUTH_09: Chặn Open Redirect (//evil.com) khi GET /dangnhap")
     void testDoGetSanitizesOpenRedirect() throws Exception {
         HttpServletRequest req = MockTestEnvironment.createBaseRequest(null, false);
         when(req.getSession(false)).thenReturn(null);

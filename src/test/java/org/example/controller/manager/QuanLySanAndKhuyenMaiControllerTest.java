@@ -56,7 +56,7 @@ public class QuanLySanAndKhuyenMaiControllerTest {
     }
 
     @ParameterizedTest(name = "[{index}] {9}")
-    @DisplayName("TC_MGR_09..10: Kiểm tra biên Form tạo Khuyến mãi tại KhuyenMaiManagerServlet qua @CsvSource")
+    @DisplayName("TC_MGR_10: Kiểm tra biên Form tạo Khuyến mãi tại KhuyenMaiManagerServlet qua @CsvSource")
     @Timeout(value = 5, unit = TimeUnit.SECONDS)
     @CsvSource(nullValues = "NULL", value = {
             // maCode, loaiGiam, giaTriGiam, start, end, soLanToiDa, giaTriToiThieu, giamToiDa, expectedError, caseLabel
@@ -111,7 +111,7 @@ public class QuanLySanAndKhuyenMaiControllerTest {
     }
 
     @Test
-    @DisplayName("TC_ADM_07: QuanLySanManagerServlet điều hướng /dangnhap với Customer (Role 3) và trả 403 khi Manager thiếu CoSoID")
+    @DisplayName("TC_AUTH_12: QuanLySanManagerServlet điều hướng /dangnhap với Customer (Role 3) và trả 403 khi Manager thiếu CoSoID")
     void testQuanLySanForbiddenForCustomer() throws Exception {
         // Case 1: Customer (Role 3) -> redirect /dangnhap
         Map<String, Object> sessionMap = MockTestEnvironment.newSessionMap();
@@ -209,7 +209,7 @@ public class QuanLySanAndKhuyenMaiControllerTest {
     }
 
     @Test
-    @DisplayName("Exception Testing (assertThrows): CaLamService.createShift ném NotFoundException & IllegalArgumentException khi dữ liệu ca sai")
+    @DisplayName("TC_MGR_12 (assertThrows): CaLamService.createShift ném NotFoundException & IllegalArgumentException khi dữ liệu ca sai")
     void testCaLamServiceExceptions() {
         // Request null -> IllegalArgumentException
         assertThrows(

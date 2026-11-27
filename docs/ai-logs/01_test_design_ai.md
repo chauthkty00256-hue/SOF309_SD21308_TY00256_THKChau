@@ -30,15 +30,15 @@
 
 Toàn bộ lớp test được đặt đúng cấu trúc package tương ứng trong `src/test/java/org/example/controller/...`:
 
-| Lớp Unit Test | Package | Controller / Service được kiểm thử | Phương thức mục tiêu | Số ca test |
+| Lớp Unit Test | Package | Controller / Service được kiểm thử | Mã Test Case truy vết (`TEST_CASES.md` — 91 ca) | Số ca test |
 | :--- | :--- | :--- | :--- | :---: |
-| `DangKyControllerTest` | `org.example.controller` | `DangKyServlet`, `XacThucOTPServlet`, `PhoneUtil` | `doPost(req, resp)`, `PhoneUtil.lookupVariants(...)` | 20 |
-| `DangNhapControllerTest` | `org.example.controller` | `DangNhapServlet`, `PhoneUtil` | `doPost(req, resp)`, `doGet(req, resp)` | 17 |
-| `ApDungKhuyenMaiControllerTest` | `org.example.controller.customer` | `ApDungKhuyenMaiServlet`, `CustomerDanhGiaServlet`, `DanhGiaService`, `CourtPricingService` | `doPost(req, resp)`, `submitReview(...)`, `calculate(...)` | 20 |
-| `KhoDichVuManagerControllerTest` | `org.example.controller.manager` | `KhoDichVuManagerServlet`, `BranchSecurityUtils` | `doGet(req, resp)`, `doPost(req, resp)`, `checkBranchAccess(...)` | 14 |
-| `QuanLySanAndKhuyenMaiControllerTest` | `org.example.controller.manager` | `KhuyenMaiManagerServlet`, `QuanLySanManagerServlet`, `SanService`, `NhanSuService`, `CaLamService` | `doPost`, `doGet`, `createSan`, `deleteSan`, `deleteLoaiSan`, `updateSanStatus`, `updateStaff`, `deleteStaff`, `createShift` | 15 |
-| `QuanLyNguoiDungAdminControllerTest` | `org.example.controller.admin` | `QuanLyNguoiDungServlet`, `QuanLyChiNhanhServlet`, `PayOSConfigAdminServlet`, `AdminDashboardServlet` | `doGet(req, resp)`, `doPost(req, resp)` | 15 |
-| *Tổng bộ Unit Test Controller mới* | — | **11 Servlet + 6 Service/Util** | — | **101** |
+| `DangKyControllerTest` | `org.example.controller` | `DangKyServlet`, `XacThucOTPServlet`, `PhoneUtil` | `TC_REG_01..09`, `TC_MOCK_02`, `TC_NFR_03` | 20 |
+| `DangNhapControllerTest` | `org.example.controller` | `DangNhapServlet`, `PhoneUtil` | `TC_AUTH_01..09`, `TC_AUTH_11` | 17 |
+| `ApDungKhuyenMaiControllerTest` | `org.example.controller.customer` | `ApDungKhuyenMaiServlet`, `CustomerDanhGiaServlet`, `DanhGiaService`, `CourtPricingService` | `TC_CAT_04..08`, `TC_BOOK_01..02`, `TC_BOOK_11` 🔶, `TC_AUTH_12` | 20 |
+| `KhoDichVuManagerControllerTest` | `org.example.controller.manager` | `KhoDichVuManagerServlet`, `BranchSecurityUtils` | `TC_MGR_02..03`, `TC_MGR_05`, `TC_AUTH_12..13`, `TC_AUTH_15` 🔶 | 14 |
+| `QuanLySanAndKhuyenMaiControllerTest` | `org.example.controller.manager` | `KhuyenMaiManagerServlet`, `QuanLySanManagerServlet`, `SanService`, `NhanSuService`, `CaLamService` | `TC_MGR_07..08`, `TC_MGR_09` 🔶, `TC_MGR_10..12`, `TC_AUTH_12..13` | 15 |
+| `QuanLyNguoiDungAdminControllerTest` | `org.example.controller.admin` | `QuanLyNguoiDungServlet`, `QuanLyChiNhanhServlet`, `PayOSConfigAdminServlet`, `AdminDashboardServlet` | `TC_ADM_01`, `TC_ADM_03..05`, `TC_AUTH_12`, `TC_MOCK_01` | 15 |
+| *Tổng bộ Unit Test Controller mới* | — | **11 Servlet + 6 Service/Util** | Bao phủ các ca tầng `Unit` + xác nhận giả thuyết `🔶` | **101** |
 
 *(Cộng thêm 2 test có sẵn trong `com.poly.sof309.controllers.SampleControllerTest` = **103 Passed**, 1 Skipped `LoginTest` `@Disabled`.)*
 

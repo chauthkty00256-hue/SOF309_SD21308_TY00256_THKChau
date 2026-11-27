@@ -140,7 +140,7 @@ public class ApDungKhuyenMaiControllerTest {
     }
 
     @Test
-    @DisplayName("TC_ADM_07 (RBAC): Manager (Role 2) bị trả 403 Forbidden khi gửi đánh giá sân thay Customer")
+    @DisplayName("TC_AUTH_12 (RBAC): Manager (Role 2) bị trả 403 Forbidden khi gửi đánh giá sân thay Customer")
     void testCustomerReviewForbiddenForNonCustomer() throws Exception {
         Map<String, Object> sessionMap = MockTestEnvironment.newSessionMap();
         TaiKhoan manager = MockTestEnvironment.buildUser(2, 2, 1, "manager1", "manager1@vsport.vn");
@@ -172,7 +172,7 @@ public class ApDungKhuyenMaiControllerTest {
     }
 
     @Test
-    @DisplayName("Exception Testing (assertThrows): CourtPricingService ném IllegalArgumentException khi khung giờ/giá sai")
+    @DisplayName("TC_BOOK_02 (assertThrows): CourtPricingService ném IllegalArgumentException khi khung giờ/giá sai")
     void testCourtPricingAssertThrowsOnInvalidArguments() {
         LocalDateTime start = LocalDateTime.of(2026, 12, 1, 18, 0);
         LocalDateTime earlierEnd = LocalDateTime.of(2026, 12, 1, 17, 0);

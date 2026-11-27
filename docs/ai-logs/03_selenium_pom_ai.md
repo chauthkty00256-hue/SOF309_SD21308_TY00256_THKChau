@@ -34,11 +34,11 @@ src/test/java/com/poly/sof309/ui/
 
 ## 2. Chi tiết các Kỹ thuật TestNG Nâng cao đã Triển khai
 
-### 2.1. Phân nhóm `groups` (`smoke` / `regression`)
-* **`groups = {"smoke", "auth"}`**: `AuthDataDrivenTestNGTest.testLoginDataDriven` — kiểm tra luồng đăng nhập cốt lõi đa vai trò và thông báo lỗi khi sai mật khẩu.
-* **`groups = {"smoke", "crud"}`**: 3 bước cốt lõi của `ManagerCrudFlowTestNGTest` (`testStep1_ManagerLogin` → `testStep2_OpenKhoDichVuPage` → `testStep3_CreateProductSuccess`).
-* **`groups = {"regression", "auth"}`**: `AuthDataDrivenTestNGTest.testRegisterAndOtpVerification` — luồng đăng ký tài khoản mới kèm xác thực OTP sai (`000000`) và Mock OTP (`123456`).
-* **`groups = {"regression", "crud"}`**: `testStep4_SearchCreatedProduct` → `testStep5_SoftDeleteCreatedProduct` (tìm kiếm và xóa mềm dọn dữ liệu vừa tạo).
+### 2.1. Phân nhóm `groups` (`smoke` / `regression`) & Truy vết `TEST_CASES.md` (91 ca)
+* **`groups = {"smoke", "auth"}`**: `AuthDataDrivenTestNGTest.testLoginDataDriven` — bao phủ `TC_AUTH_01..04`, `TC_AUTH_07` (đăng nhập đa vai trò & ca sai mật khẩu).
+* **`groups = {"smoke", "crud"}`**: 3 bước cốt lõi của `ManagerCrudFlowTestNGTest` (`testStep1_ManagerLogin` → `testStep2_OpenKhoDichVuPage` → `testStep3_CreateProductSuccess`) — bao phủ `TC_MGR_01`, `TC_NFR_04`, `TC_NFR_05`.
+* **`groups = {"regression", "auth"}`**: `AuthDataDrivenTestNGTest.testRegisterAndOtpVerification` — bao phủ `TC_REG_01`, `TC_REG_08`, `TC_MOCK_02` (đăng ký tài khoản mới kèm OTP sai `000000` và Mock OTP `123456`).
+* **`groups = {"regression", "crud"}`**: `testStep4_SearchCreatedProduct` → `testStep5_SoftDeleteCreatedProduct` — hoàn thiện luồng tìm kiếm và xóa mềm dọn dữ liệu trong `TC_MGR_01`.
 
 ### 2.2. Chuỗi phụ thuộc `dependsOnMethods` (`ManagerCrudFlowTestNGTest`)
 Thiết lập ràng buộc tuần tự trên cùng một phiên trình duyệt (`@BeforeClass` / `@AfterClass`); nếu bước trước thất bại, TestNG tự động **Skip** các bước phụ thuộc phía sau thay vì chạy lỗi dây chuyền:
